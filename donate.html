@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles2.css">
+    <title>Пожертвования</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="projects.html">Проекты</a></li>
+                <li><a href="team.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="donation">
+        <h2>Сделайте пожертвование</h2>
+        <p>Ваше пожертвование поможет тем, кто в этом нуждается. Выберите сумму и метод оплаты.</p>
+        
+        <form id="donation-form">
+            <label for="amount">Сумма (₽):</label>
+            <input type="number" id="amount" name="amount" min="50" required placeholder="Введите сумму">
+            
+            <label for="payment-method">Метод оплаты:</label>
+            <select id="payment-method" name="payment-method" required>
+                <option value="card">Банковская карта</option>
+                <option value="paypal">PayPal</option>
+                <option value="yoomoney">ЮMoney</option>
+                <option value="crypto">Криптовалюта</option>
+            </select>
+
+            <button type="submit" class="donate-button">Сделать пожертвование</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Благотворительная Организация. Все права защищены.</p>
+    </footer>
+
+    <script>
+        document.getElementById("donation-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            const amount = document.getElementById("amount").value;
+            const method = document.getElementById("payment-method").value;
+
+            if (amount < 50) {
+                alert("Минимальная сумма пожертвования - 50 ₽");
+            } else {
+                alert(`Спасибо за пожертвование в размере ${amount} ₽ с помощью ${method}!`);
+            }
+        });
+    </script>
+</body>
+</html>
