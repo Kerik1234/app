@@ -1,0 +1,263 @@
+/* 🔹 Основные стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* 🔹 Фиксированная панель навигации */
+header {
+    position: fixed;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.5);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 1000;
+}
+
+/* 🔹 Навигация */
+nav {
+    margin-top: 10px;
+    margin-right: 60px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav li {
+    margin-left: 30px;
+    position: relative;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+nav a:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+/* 🔹 Кнопка "Поддержка" */
+.support-button {
+    background-color: #2E2BD0;
+    color: white;
+    padding: 15px 25px;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background 0.3s;
+    margin-left: 40px;
+}
+
+.support-button:hover {
+    background: #1B1B8E;
+}
+
+/* 🔹 Разделительная линия перед кнопкой */
+nav .separator {
+    width: 1px;
+    height: 30px;
+    background-color: #ccc;
+    position: absolute;
+    left: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* 🔹 Основные секции */
+section {
+    padding: 40px;
+    margin: 80px auto 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 800px;
+}
+
+/* 🔹 Заголовки */
+h2 {
+    font-size: 24px;
+    color: #2E2BD0;
+}
+
+/* 🔹 Карточки проектов */
+.project-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* 🔹 Анимация увеличения при наведении */
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* 🔹 Картинки */
+.project-card img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+}
+
+/* 🔹 Кнопка "Помоги сейчас" */
+.project-card button {
+    background: lightblue;
+    color: white;
+    font-size: 16px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+/* 🔹 Анимация кнопки при наведении */
+.project-card button:hover {
+    background: #007bff;
+    transform: scale(1.1);
+}
+
+/* 🔹 Футер */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+/* 🔹 Медиа-запрос для мобильных устройств */
+@media (max-width: 768px) {
+    nav {
+        margin-right: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    .project-card img {
+        max-width: 100%;
+    }
+}
+
+.donate-button {
+    background: #2E2BD0;
+    color: white;
+    font-size: 18px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.donate-button:hover {
+    background: #1B1B8E;
+}
+
+.donate-button {
+    background: #2E2BD0;
+    color: white;
+    font-size: 18px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.donate-button:hover {
+    background: #1B1B8E;
+}
+
+.donate-button {
+    background: #2E2BD0;
+    color: white;
+    font-size: 18px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.donate-button:hover {
+    background: #1B1B8E;
+}
+
+/* 🔹 Основные стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* 🔹 Секция пожертвований */
+#donation {
+    padding: 40px;
+    margin: 80px auto 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 600px;
+}
+
+/* 🔹 Заголовки */
+h2 {
+    font-size: 24px;
+    color: #2E2BD0;
+}
+
+/* 🔹 Поля ввода */
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* 🔹 Кнопка "Сделать пожертвование" */
+.donate-button {
+    background: #2E2BD0;
+    color: white;
+    font-size: 18px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+/* 🔹 Анимация кнопки при наведении */
+.donate-button:hover {
+    background: #1B1B8E;
+    transform: scale(1.1);
+}
